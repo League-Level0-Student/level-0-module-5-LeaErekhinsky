@@ -18,7 +18,7 @@ public class HappyPet {
 
 		while (true) {
 
-			int task = JOptionPane.showOptionDialog(null, "What whould you like to do?", "", 0,
+			int task = JOptionPane.showOptionDialog(null, "What would you like to do?", "", 0,
 					JOptionPane.INFORMATION_MESSAGE, null,
 					new String[] { "Water your pet",
 							"Put your pet in a large space with LED lighting for a day/night cycle", "Feed your pet" },
@@ -28,7 +28,8 @@ public class HappyPet {
 				if (animal == 0) {
 					howHappy = howHappy - 25;
 					JOptionPane.showMessageDialog(null,
-							"Your tarantula is furious that you splashed water on it.\nIt raises its legs, exposes its fangs, and flicks tiny barbed hairs at you.\nPet Happiness Level: "
+							"Your tarantula is furious that you splashed water on it.\nIt raises its legs, exposes"
+									+ " its fangs, and flicks tiny barbed hairs at you.\nPet Happiness Level: "
 									+ howHappy);
 
 				} else if (animal == 1) {
@@ -41,19 +42,45 @@ public class HappyPet {
 					if (rand.nextBoolean()) {
 						howHappy = howHappy + 25;
 						JOptionPane.showMessageDialog(null,
-								"Your fennec fox is elated that you splashed water on it.\nIt purrs and wags its tail.\nPet Happiness Level: "
-										+ howHappy);
+								"Your fennec fox is elated that you splashed water on it.\nIt purrs and wags its tail.\n"
+										+ "Pet Happiness Level: " + howHappy);
 
 					} else {
 						howHappy = howHappy - 25;
 						JOptionPane.showMessageDialog(null,
-								"Your fennec fox is furious that you splashed water on it.\nIt arches its back, angling its ears back, bristling the hairs at the base of its tail, scratching with its feet, screeches very loudly, causing you permanent hearing loss, pounces on you, and bites your finger off.\nPet Happiness Level: "
-										+ howHappy);
+								"Your fennec fox is furious that you splashed water on it.\nIt arches its back, angles"
+										+ " its ears back, bristles the hairs at the base of its tail, scratches with its feet,"
+										+ " screeches very loudly, causing you permanent hearing loss, pounces on you, and bites"
+										+ " your finger off.\nPet Happiness Level: " + howHappy);
 
 					}
-
 				}
+			}
+			else if(task == 1) {
+				if(animal == 0) {
+					howHappy = howHappy + 25;
+					JOptionPane.showMessageDialog(null,
+							"Your tarantula loves its new terrarium.\nIt happily moves into it.\nPet Happiness Level: " + howHappy);					
+				}
+				else if(animal == 1) {
+					howHappy = howHappy - 25;
+					JOptionPane.showMessageDialog(null,
+							"Your alligator hates its new terrarium.\nIt would rather be somewhere wet and humid. It begrudgingly moves into it, but annoys you and doesn't let you concentrate on your online games by growling, hissing, snorting, and clicking its jaws together repeatedly all day.\nPet Happiness Level: " + howHappy);					
+					
+				}
+				else {
+					JOptionPane.showMessageDialog(null,
+							"Your fennec fox doesn't really care.\nIt really doesn't.\nPet Happiness Level: " + howHappy);					
+					
+				}
+				
+			}
+			else {
+				howHappy = howHappy + 25;
+				JOptionPane.showMessageDialog(null,
+						"It is now the happiest creature alive.\nIt will love you forever and ever unless you do something really bad.\nPet Happiness Level: " + howHappy);					
 
+				
 			}
 
 			if (howHappy == 0) {
@@ -76,7 +103,7 @@ public class HappyPet {
 				break;
 
 			}
-			
+
 			if (howHappy == 100) {
 				if (animal == 0) {
 					JOptionPane.showMessageDialog(null,
