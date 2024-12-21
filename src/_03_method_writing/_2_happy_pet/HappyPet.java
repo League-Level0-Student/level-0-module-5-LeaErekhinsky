@@ -55,32 +55,31 @@ public class HappyPet {
 
 					}
 				}
-			}
-			else if(task == 1) {
-				if(animal == 0) {
+			} else if (task == 1) {
+				if (animal == 0) {
 					howHappy = howHappy + 25;
 					JOptionPane.showMessageDialog(null,
-							"Your tarantula loves its new terrarium.\nIt happily moves into it.\nPet Happiness Level: " + howHappy);					
-				}
-				else if(animal == 1) {
+							"Your tarantula loves its new terrarium.\nIt happily moves into it.\nPet Happiness Level: "
+									+ howHappy);
+				} else if (animal == 1) {
 					howHappy = howHappy - 25;
 					JOptionPane.showMessageDialog(null,
-							"Your alligator hates its new terrarium.\nIt would rather be somewhere wet and humid. It begrudgingly moves into it, but annoys you and doesn't let you concentrate on your online games by growling, hissing, snorting, and clicking its jaws together repeatedly all day.\nPet Happiness Level: " + howHappy);					
-					
-				}
-				else {
+							"Your alligator hates its new terrarium.\nIt would rather be somewhere wet and humid. It begrudgingly moves into it, but annoys you and doesn't let you concentrate on your online games by growling, hissing, snorting, and clicking its jaws together repeatedly all day.\nPet Happiness Level: "
+									+ howHappy);
+
+				} else {
 					JOptionPane.showMessageDialog(null,
-							"Your fennec fox doesn't really care.\nIt really doesn't.\nPet Happiness Level: " + howHappy);					
-					
+							"Your fennec fox doesn't really care.\nIt really doesn't.\nPet Happiness Level: "
+									+ howHappy);
+
 				}
-				
-			}
-			else {
+
+			} else {
 				howHappy = howHappy + 25;
 				JOptionPane.showMessageDialog(null,
-						"It is now the happiest creature alive.\nIt will love you forever and ever unless you do something really bad.\nPet Happiness Level: " + howHappy);					
+						"It is now the happiest creature alive.\nIt will love you forever and ever unless you do something really bad.\nPet Happiness Level: "
+								+ howHappy);
 
-				
 			}
 
 			if (howHappy == 0) {
